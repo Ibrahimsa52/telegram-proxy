@@ -1,11 +1,10 @@
-const MTProtoProxy = require('mtproton');
+const MTProxy = require('mtproto-proxy');
 
-const proxy = new MTProtoProxy({
+const proxy = new MTProxy({
   port: process.env.PORT || 443,
-  secret: '1234567890abcdef1234567890abcdef' // غيّرها بالسر بتاعك
+  secret: '1234567890abcdef1234567890abcdef'
 });
 
 proxy.listen(() => {
-  console.log(`🚀 MTProto Proxy شغال على البورت ${proxy.port}`);
-  console.log(`🔑 Secret: ${proxy.secret}`);
+  console.log(`🚀 Proxy شغال على البورت ${proxy.port}`);
 });
