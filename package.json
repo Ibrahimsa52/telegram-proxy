@@ -1,13 +1,12 @@
 {
   "name": "telegram-proxy",
   "version": "1.0.0",
-  "description": "Telegram MTProxy server",
+  "description": "MTProto Telegram Proxy",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
-    "mtproton": "*"
+    "mtproton": "1.1.0"
   }
 }
-
