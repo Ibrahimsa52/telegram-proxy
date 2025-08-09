@@ -1,10 +1,19 @@
-const MTProxy = require('mtproto-proxy');
-
-const proxy = new MTProxy({
-  port: process.env.PORT || 443,
-  secret: '1234567890abcdef1234567890abcdef'
-});
-
-proxy.listen(() => {
-  console.log(`🚀 Proxy شغال على البورت ${proxy.port}`);
-});
+{
+  "name": "telegram-proxy",
+  "version": "1.0.0",
+  "description": "Simple Telegram MTProto Proxy",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "telegram",
+    "mtproto",
+    "proxy"
+  ],
+  "author": "Ibrahimsa52",
+  "license": "MIT",
+  "dependencies": {
+    "mtproto-proxy": "^0.1.0"
+  }
+}
